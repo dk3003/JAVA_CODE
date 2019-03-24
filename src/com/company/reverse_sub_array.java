@@ -15,19 +15,24 @@ public class reverse_sub_array
                 for (int i = 0; i < n; i++)
                     arr[i] = Integer.parseInt(val[i]);
 
-                String l = in.readLine();
-                String[] v = l.trim().split("\\s+");
-                int start = Integer.parseInt(v[0]);
-                int end = Integer.parseInt(v[1]);
+                String line1 = in.readLine();
+                String[] v = line1.trim().split("\\s+");
+                int l = Integer.parseInt(v[0]);
+                int r = Integer.parseInt(v[1]);
 
 
-                for (int i = start - 1,j = end - 1; i < j; i++, j--) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-                for (int i = 0; i < n; i++)
+                int r=end;
+                for (int i=0;i<start-1;i++)
+                {
                     System.out.print(arr[i] + " ");
+                }
+                for (int i=start;i<=end;i++) {
+                    System.out.print(arr[r-1] + " ");
+                    r--;
+                }
+                 for (int i=end;i<=n;i++) {
+                     System.out.print(arr[i]+" ");
+                 }
 
                 System.out.print("\n");
             }
