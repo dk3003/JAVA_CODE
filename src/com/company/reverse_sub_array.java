@@ -21,18 +21,18 @@ public class reverse_sub_array
                 int r = Integer.parseInt(v[1]);
 
 
-                int r=end;
-                for (int i=0;i<start-1;i++)
-                {
-                    System.out.print(arr[i] + " ");
-                }
-                for (int i=start;i<=end;i++) {
-                    System.out.print(arr[r-1] + " ");
-                    r--;
-                }
-                 for (int i=end;i<=n;i++) {
-                     System.out.print(arr[i]+" ");
-                 }
+//                int r=end;
+//                for (int i=0;i<start-1;i++)
+//                {
+//                    System.out.print(arr[i] + " ");
+//                }
+//                for (int i=start;i<=end;i++) {
+//                    System.out.print(arr[r-1] + " ");
+//                    r--;
+//                }
+//                 for (int i=end;i<=n;i++) {
+//                     System.out.print(arr[i]+" ");
+//                 }
 
                 System.out.print("\n");
             }
